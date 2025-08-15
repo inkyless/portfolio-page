@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css-files/fixed-styles.css" />
+    <link rel="stylesheet" href="css-files/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      type="image/png"
+      sizes="96x96"
+      rel="icon"
+      href="src/icons8-puzzle-96.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
+    </script>
+    <script src="js-files/index.js" defer></script>
+    <script src="js-files/fixed-styles.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <header id="fixed-header">
+        <div class="title-header">
+          <h1><a href="index.html">Viola Glinko</a></h1>
+          <button id="burger"><i class="fa fa-1x fa-list-ul"></i></button>
+        </div>
+
+        <nav class="top-header" aria-label="Main Navigation">
+          <ul id="hyperlink">
+            <li class="link-1">
+              <a href="html-files/showcase.html">
+                <i class="material-icons md1">cases</i>
+                <span>Showcases</span></a
+              >
+            </li>
+            <li class="link-2">
+              <a href="html-files/aboutme.html">
+                <i class="material-icons md1">account_box</i>
+                <span>About Me</span></a
+              >
+            </li>
+            <li class="link-3">
+              <a href="html-files/contact.html">
+                <i class="material-icons md1">chat_bubble</i>
+                <span>Contact</span></a
+              >
+            </li>
+          </ul>
+
+          <div class="social-medias">
+            <ul>
+              <li>
+                <a href="https://github.com/inkyless" target="_blank"
+                  ><i class="fa fa-1x fa-github-square"></i>
+                  <span>@inkyless</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/violaglinko/"
+                  target="_blank"
+                  ><i class="fa fa-1x fa-linkedin-square"></i>
+                  <span>@violaglinko</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- <a class="download-button">Download Resume/CV</a> -->
+      </header>
+      <main id="home-page">
+        <section id="hero-landing" class="main-section">
+          <div id="hero-quotes">
+            <p id="hero-subtitle">
+              Hello! I'm <span class="highlight">Viola</span>
+            </p>
+            <p id="hero-text">
+              Designing <span class="highlight">journeys</span>, weaving
+              <span class="highlight">words</span>, thus shaping
+              <span class="highlight">stories</span>
+            </p>
+          </div>
+          <div id="hero-buttons">
+            <a href="html-files/showcase.html" id="project-button">Projects</a>
+            <a href="html-files/contact.html" id="contact-button"
+              >Let's Talk!</a
+            >
+          </div>
+        </section>
+        <section id="project-section" class="main-section reveal">
+          <h2>Selected Projects</h2>
+          <div class="slideshow-container">
+            <div class="slides fade">
+              <img src="src/calculator-thumnail.png" style="width: 100%" />
+              <div class="text">Calculator</div>
+            </div>
+
+            <div class="slides fade">
+              <img src="src/dashboard-thumnail.png" style="width: 100%" />
+              <div class="text">Admin Dashboard</div>
+            </div>
+
+            <div class="slides fade">
+              <img src="src/landing-page-thumnail.png" style="width: 100%" />
+              <div class="text">Landing Page</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <br />
+            <!-- <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div> -->
+          </div>
+
+          <a href="html-files/showcase.html"
+            ><button>Check All Projects</button></a
+          >
+        </section>
+        <section id="about-me" class="main-section reveal">
+          <h2>Design That Works as Hard as You Do</h2>
+          <p>
+            A web developer dedicated to crafting immersive digital experiences
+            that leave a lasting impression
+          </p>
+          <ul>
+            <li>FrontEnd Development</li>
+            <li>Web Design</li>
+            <li>Graphic Design</li>
+          </ul>
+          <a href="html-files/aboutme.html"><button>Know Me More!</button></a>
+        </section>
+
+        <section id="contact-preview" class="main-section reveal">
+          <h2>Chat with Me!</h2>
+          <p>
+            Interested working with me? Do contact by the this button below!
+          </p>
+          <a href="html-files/contact.html"><button>Contact Me</button></a>
+        </section>
+      </main>
+
+      <footer>
+        <!-- <a class="download-button">Download Resume/CV</a> -->
+        <p>
+          © Copyrights Reserved 2025 <br />
+          Viola Glinko
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

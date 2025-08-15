@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css-files/fixed-styles.css" />
+    <link rel="stylesheet" href="../css-files/contact.css" />
+    <script src="../js-files/fixed-styles.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="../js-files/contact.js" defer></script>
+    <link
+      type="image/png"
+      sizes="96x96"
+      rel="icon"
+      href="../src/icons8-puzzle-96.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="page">
+      <header id="fixed-header">
+        <div class="title-header">
+          <h1><a href="../index.html">Viola Glinko</a></h1>
+          <button id="burger"><i class="fa fa-1x fa-list-ul"></i></button>
+        </div>
+
+        <nav class="top-header" aria-label="Main Navigation">
+          <ul id="hyperlink">
+            <li class="link-1">
+              <a href="showcase.html">
+                <i class="material-icons md1">cases</i>
+                <span>Showcases</span></a
+              >
+            </li>
+            <li class="link-2">
+              <a href="aboutme.html">
+                <i class="material-icons md1">account_box</i>
+                <span>About Me</span></a
+              >
+            </li>
+            <li class="link-3">
+              <a href="contact.html">
+                <i class="material-icons md1">chat_bubble</i>
+                <span>Contact</span></a
+              >
+            </li>
+          </ul>
+
+          <div class="social-medias">
+            <ul>
+              <li>
+                <a href="https://github.com/inkyless" target="_blank"
+                  ><i class="fa fa-1x fa-github-square"></i>
+                  <span>@inkyless</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/violaglinko/"
+                  target="_blank"
+                  ><i class="fa fa-1x fa-linkedin-square"></i>
+                  <span>@violaglinko</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- <a class="download-button">Download Resume/CV</a> -->
+      </header>
+      <main id="contact">
+        <form method="post" id="contact-form">
+          <h2>Contact</h2>
+          <p>Whether it's work or just a hello, my inbox is always open.</p>
+          <div class="first-row">
+            <div class="input-label">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                minlength="5"
+              />
+            </div>
+            <div class="input-label">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                minlength="10"
+              />
+            </div>
+          </div>
+          <div class="second-row">
+            <select name="topics" id="topics" required>
+              <option value="" selected hidden>Topics</option>
+              <option value="project">Project</option>
+              <option value="collab">Collaboration</option>
+              <option value="hire">Hiring / Job Offer</option>
+              <option value="free">Freelance</option>
+              <option value="feedback">Feedback</option>
+              <option value="support">Support / Issues</option>
+              <option value="talk">Talk</option>
+              <option value="other">Others</option>
+            </select>
+          </div>
+          <div class="third-row">
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              placeholder="Message"
+              minlength="50"
+              maxlength="500"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+
+      <footer>
+        <!-- <a class="download-button">Download Resume/CV</a> -->
+        <p>
+          © Copyrights Reserved 2025 <br />
+          Viola Glinko
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
