@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Hello! I'm Viola and Welcome to my portfolio website. While the website is still very amateurish, I'll try my best to improve it during the whole learning journey.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkyless/portfolio-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inkyless/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/inkyless/portfolio-page#readme",
+  "dependencies": {
+    "vite": "^8.0.1"
+  }
+  
+}
