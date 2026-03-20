@@ -10,3 +10,14 @@ First push to github repository, settling the necessary pages (Home Page, Projec
 - Due to lack of experience, the "About Me" page is still barely empty with histories. This will be updated when my progressing journey . 
 - While the contact pages is set, still unsure if the submit function will work as intended. More testing will be needed. 
 - Showcases on Graphic Designs and Web Design is not added yet, will consider adding this sooner. For now, [this link to PDF will be used](https://pdflink.to/96c8564a/)
+
+
+## 2026-03-20
+### Update
+Revamped portfolio website to be more compact with bento box concept while maintaining the same accent color 
+### Plans
+- Will try to create blog pages
+- Will update the projects section, for now it is placeholder
+- Update the introduction section (because I'm a graduate now :o)
+- For now the website will be single page instead of the initial multiple pages, will consider when using frameworks
+- Adding real time clock (as from my own timezone)
