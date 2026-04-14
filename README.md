@@ -6,4 +6,3 @@ This portfolio is developed using **HTML, CSS, and vanilla Javascript**. While I
 
 Check my [CHANGELOG markfown file](CHANGELOG.md) to read what I have experienced on updating this website, thanks for reading!
 
-**Graphic Design and Web Design Portfolio** : [Check here](https://pdflink.to/96c8564a/)

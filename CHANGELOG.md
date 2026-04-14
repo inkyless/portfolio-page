@@ -21,3 +21,12 @@ Revamped portfolio website to be more compact with bento box concept while maint
 - Update the introduction section (because I'm a graduate now :o)
 - For now the website will be single page instead of the initial multiple pages, will consider when using frameworks
 - Adding real time clock (as from my own timezone)
+
+## 2026-04-15
+### Update
+Add real time clock on footer (probably not a good idea, isn't it?), fine tuning the frontend while adding blog page to the website
+### Plans
+- Will update to more proper framework due to limitation of JavaScript library of the Markdown feature for blogs
+- Not related to this portfolio, will upgrade my project showcase with better quality
+
+Note : Overall I am satisfied with this current frontend, the main problem is on the showcases and blogs content itself. Will improve myself to create more dedicated projects to show myself better

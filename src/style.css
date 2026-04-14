@@ -12,6 +12,7 @@
   --text: #4e546e;
   --text-h: hsl(218, 56%, 19%);
   --bg: #f9f9f9;
+  --bg-hover : #f3f3f3;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #7ed7e9;
@@ -79,7 +80,7 @@ body {
 }
 
 h1,
-h2 {
+h2, h3 {
   font-family: var(--heading);
   font-weight: 500;
   color: var(--text-h);
@@ -114,6 +115,12 @@ h2 {
     font-size: 20px;
   }
 }
+
+h3{
+  font-size:1.15rem;
+  margin: 0 0 8px;
+
+}
 p {
   margin: 0;
   color:var(--text)
@@ -124,7 +131,7 @@ a{
   text-decoration: none;
 }
 
-a:hover{
+#navigate a:hover {
   text-decoration: underline var(--accent-2) double 2px;
 }
 
@@ -144,11 +151,11 @@ a:hover{
 #center {
   display: flex;
   flex-direction: column;
-    padding: 1.5em 2em 1.25em;
-    gap: 25px;
-  place-content: center;
-  place-items: center;
-  flex-grow: 1;
+  padding: 1.5em 2em 1.25em;
+  gap: 25px;
+    place-content: center;
+    place-items: center;
+    flex-grow: 1;
 
   @media (max-width: 1024px) {
     padding: 1.5em 1em 1.25em;
@@ -159,6 +166,16 @@ a:hover{
 
   #intro{
     background-color: var(--accent);
+  }
+
+  #intro, .text-box{
+    display: flex;
+    flex-direction: column;
+
+    .text-box{
+      flex-grow: 2;
+      justify-content: space-evenly;
+    }
   }
 
   #blog{
@@ -174,7 +191,7 @@ a:hover{
 
 
 #spacer {
-  height: 88px;
+  height: 50px;
   width:100%;
   border-top: 1px solid var(--border);
   @media (max-width: 1024px) {
@@ -217,10 +234,7 @@ header{
   align-items: center;
   border-bottom:1px #111 solid;
   box-shadow: 1px 2px #444;
-
-
 }
-
 
   header ul{
     gap: 1em;
@@ -281,20 +295,53 @@ section:not(#spacer), #social li{
   @media(min-width:576px) and (max-width:1024px){
       grid-template-columns:repeat(auto-fit,minmax(240px, 1fr));
 }
-  img{
-    max-height:250px;
-  }
+
+    .project-item img{
+      height: 200px;
+      border:4px #444 solid;
+
+    }
+
+    .project-card{
+      display:flex;
+      justify-content: space-between;
+    }
+
+}
+
+#blog>.text-box{
+  background-color: var(--bg);
+  padding:0.5em;
+  border:2px #111 solid;
+  box-shadow: 3px 3px #555;
+  border-radius: 5px;
+}
+
+
+#blog>.text-box:hover{
+  background-color: var(--bg-hover);
 }
 
 footer{
-  padding:1em;
+  display: flex;
+  flex-direction: column;
+
+
 }
+
+footer > div{
+  padding:1em;
+  display: flex;
+  justify-content: space-evenly;
+
+  }
+
 
 @media(min-width:1024px){
   #center{
     display: grid;
     grid-template-columns:2fr 1fr;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
     gap:2em 3em;
     place-items: initial;
   }
